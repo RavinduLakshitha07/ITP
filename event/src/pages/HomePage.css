@@ -1,0 +1,73 @@
+/* src/pages/Home.css */
+.home-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero {
+  background-color: #4caf50; /* Dark green background */
+  color: white;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #81c784; /* Light green button */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #66bb6a; /* Darker green on hover */
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.feature-item {
+  background-color: #e8f5e9; /* Light green background for feature items */
+  padding: 30px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.feature-item h2 {
+  color: #388e3c; /* Dark green text */
+  font-size: 1.8em;
+}
+
+.feature-item p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.link-button {
+  background-color: #4caf50; /* Matching the hero section */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}

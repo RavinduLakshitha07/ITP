@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e8f5e9;
+  margin: 0;
+  padding: 0;
+}
+
+.event-booking-container {
+  max-width: 600px; /* Reduced max-width for a more compact form */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
+}
+
+.search-container {
+  margin-bottom: 15px; /* Reduced space between search and form */
+}
+
+.search-container input {
+  width: 100%;
+  padding: 8px; /* Reduced padding for modern touch */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Maintained more angular corners for inputs */
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sides */
+  margin-bottom: 15px; /* Space between rows */
+}
+
+.left-side, .right-side {
+  flex: 1; /* Each side takes equal space */
+  padding: 10px; /* Add padding within each side */
+}
+
+.left-side {
+  margin-right: 20px; /* Space between left and right columns */
+}
+
+.right-side {
+  margin-left: 20px; /* Space between left and right columns */
+}
+
+.form-group {
+  margin-bottom: 10px; /* Space between fields */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px; /* Reduced margin */
+  color: #388e3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 6px; /* Smaller padding for compactness */
+  border: 1px solid #a5d6a7;
+  border-radius: 4px; /* Maintained more angular corners */
+  font-size: 14px; /* Consistent font size */
+  background-color: #f1f8e9;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #66bb6a;
+  box-shadow: 0 0 6px rgba(102, 187, 106, 0.3);
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px; /* Reduced padding for a more compact button */
+  background-color: #43a047;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px; /* More angular corners */
+  font-size: 14px; /* Consistent font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button:active {
+  background-color: #2e7d32;
+}
+
+.booked-events-container {
+  margin-top: 15px; /* Reduced margin for booked events */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em; /* Updated font size */
+}
+
+@media (max-width: 768px) {
+  .event-booking-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack on smaller screens */
+  }
+
+  .left-side,
+  .right-side {
+    margin-right: 0; /* Reset margin for small screens */
+    margin-bottom: 10px; /* Reduced space between groups */
+  }
+}
